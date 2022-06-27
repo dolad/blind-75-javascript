@@ -9,3 +9,4 @@ const twoSum = function(num, target) {
         map.set(num[i], i);
     }
 }
+
