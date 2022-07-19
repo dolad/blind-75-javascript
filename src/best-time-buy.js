@@ -5,7 +5,7 @@ const maxProfit = function(prices){
         if(prices[index] < minVal ) {
             minVal = prices[index];
         }else if(prices[index] - minVal > maxVal)
-        maxVal = array[index] - minVal;
+            maxVal = prices[index] - minVal;
     }
-    return maxVal
+    return maxVal;
 }
