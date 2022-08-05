@@ -9,9 +9,11 @@ var maxProduct = function(nums) {
          minTill[index] = Math.min(n, maxTill[index-1] * n, minTill[index-1] * n);
          result = Math.max(result, maxTill[index])
      }
-     
-     return result
+     console.log(Math.max(-2,1,2,-4,13,23));
+     console.log(result);
+     return result > Math.max(...nums) ? result : Math.max(...nums);
      
  };
 
-maxProduct([2,3,-2,4])
+const result = maxProduct([-2,1,2,-4,13,23]);
+console.log(result);

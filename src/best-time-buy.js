@@ -1,5 +1,5 @@
 const maxProfit = function(prices){
-    const minVal = Number.MAX_SAFE_INTEGER;
+    let minVal = Number.MAX_SAFE_INTEGER;
     let maxVal = 0;
     for (let index = 0; index < prices.length; index++) {
         if(prices[index] < minVal ) {
@@ -9,3 +9,4 @@ const maxProfit = function(prices){
     }
     return maxVal;
 }
+console.log(maxProfit([2,4,1]))
